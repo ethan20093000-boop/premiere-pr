@@ -13,4 +13,4 @@ Petit module PowerShell d'utilitaires de texte, créé pour s'entraîner aux pul
 Invoke-Pester
 ```
 
-Les tests utilisent [Pester](https://pester.dev), qui est installé par défault avec Windows PowerShell.
+Les tests utilisent [Pester](https://pester.dev), qui est installé par défaut avec Windows PowerShell.

@@ -9,3 +9,13 @@ Describe 'Get-WordCount' {
         Get-WordCount '' | Should Be 0
     }
 }
+
+Describe 'ConvertTo-Slug' {
+    It 'met en minuscules et remplace les espaces par des tirets' {
+        ConvertTo-Slug 'Bonjour le Monde' | Should Be 'bonjour-le-monde'
+    }
+
+    It 'retire la ponctuation et les tirets en trop aux extremites' {
+        ConvertTo-Slug '  Hello, World!  ' | Should Be 'hello-world'
+    }
+}
